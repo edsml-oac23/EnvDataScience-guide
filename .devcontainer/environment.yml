@@ -2,30 +2,32 @@ name: eds-geospatial
 channels:
   - conda-forge
 dependencies:
-  # Núcleo
+  # --- Core Python & Jupyter ---
   - python=3.10
   - pip
   - jupyterlab
-  - ipykernel
 
-  # Geoespacial (solo conda-forge)
+  # --- Core Geospatial Stack ---
+  # (Manejado por Mamba para evitar conflictos)
   - gdal
   - geopandas
   - rasterio
   - pyproj
   - shapely
   - fiona
-  - rtree            # spatial index
-  - geotiff
-  - proj
-  - geos
 
-  # OpenGeos stack moderno
+  # --- Modern OpenGeos Stack ---
   - leafmap
   - earthengine-api
-
-  # Ciencia de datos
-  - pandas
+  - samgeo                # Instalado vía conda-forge
+  - segment-anything-hq   # Instalado vía conda-forge
+  
+  # --- ML & Data Science ---
   - scikit-learn
+  - pandas
   - matplotlib
-  - numpy
+  
+  # --- Pip-only packages ---
+  - pip:
+    # Instalamos geoai directamente desde el repo de GitHub
+    - "git+https://github.com/opengeos/geoai.git"
