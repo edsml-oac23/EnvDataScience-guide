@@ -1,5 +1,5 @@
 # Start from a base image that has Mamba installed
-FROM mambaorg/mambaforge:latest
+FROM condaforge/mambaforge:latest
 
 # Set the working directory inside the container
 WORKDIR /workspaces/EnvDataScience-guide
