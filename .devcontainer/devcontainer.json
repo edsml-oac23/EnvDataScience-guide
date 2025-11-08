@@ -1,40 +1,24 @@
 {
   "name": "Imperial EDSML Practicals",
-  // Tells VS Code to build our Dockerfile
   "build": {
     "dockerfile": "Dockerfile",
     "context": "."
   },
-
-  // This is the magic part!
   "customizations": {
     "vscode": {
       "extensions": [
-        // Standard extensions for Python
         "ms-python.python",
         "ms-toolsai.jupyter",
-
-        // This is YOUR custom guide!
-        // We will create this .extensions folder next.
         "./.extensions/eds-guide-0.0.1.vsix"
       ]
     }
   },
-
-  // --- Settings to make the container work smoothly ---
-  // Tell VS Code to use the bash shell where our env is activated
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.profiles.linux": {
-      "bash": {
-        "path": "/bin/bash",
-        "args": ["-l"]
-      }
+      "bash": { "path": "/bin/bash", "args": ["-l"] }
     },
-    // Point the container's Python interpreter to the one Mamba installed
     "python.defaultInterpreterPath": "/opt/conda/envs/eds-geospatial/bin/python"
   },
-  
-  // Use the non-root 'mamba' user
   "remoteUser": "mamba"
 }

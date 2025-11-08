@@ -1,19 +1,18 @@
-# Start from a base image that has Mamba installed
+# Base con conda/mamba preinstalado
 FROM condaforge/mambaforge:latest
 
-# Set the working directory inside the container
+# Carpeta de trabajo
 WORKDIR /workspaces/EnvDataScience-guide
 
-# Copy the environment file into the container
+# Copiamos el environment.yml
 COPY environment.yml .
 
-# Create the conda environment from the .yml file
-# This is the step that installs all geospatial libraries
-RUN mamba env create -f environment.yml
+# Crear entorno con todo el stack geoespacial desde conda-forge
+RUN mamba env create -f environment.yml && mamba clean -afy
 
-# Activate the environment by default
+# Activar el entorno por defecto en shells interactivos
 SHELL ["/bin/bash", "-c"]
 RUN echo "mamba activate eds-geospatial" >> /etc/bash.bashrc
 
-# Set user to a non-root user for security
-USER $MAMBA_USER
+# Usar un usuario existente del contenedor (evita el warning de $MAMBA_USER)
+USER mamba
