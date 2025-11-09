@@ -15,4 +15,4 @@ SHELL ["/bin/bash", "-c"]
 RUN echo "mamba activate eds-geospatial" >> /etc/bash.bashrc
 
 # 6. Cambiar al usuario no-root correcto ('mambauser' para esta imagen)
-USER mambauser
+USER root

@@ -35,5 +35,5 @@
   },
   
   // Usar el usuario no-root 'mambauser' (debe coincidir con el Dockerfile)
-  "remoteUser": "mambauser"
+  "remoteUser": "root"
 }
