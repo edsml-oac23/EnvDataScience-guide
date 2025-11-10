@@ -8,7 +8,7 @@ dependencies:
   - jupyterlab
 
   # --- Core Geospatial Stack ---
-  # (Manejado por Mamba para evitar conflictos)
+  
   - gdal
   - geopandas
   - rasterio
@@ -19,8 +19,8 @@ dependencies:
   # --- Modern OpenGeos Stack ---
   - leafmap
   - earthengine-api
-  - samgeo                # Instalado vía conda-forge
-  - segment-anything-hq   # Instalado vía conda-forge
+  - samgeo               
+  - segment-anything-hq   
   
   # --- ML & Data Science ---
   - scikit-learn
@@ -29,5 +29,5 @@ dependencies:
   
   # --- Pip-only packages ---
   - pip:
-    # Instalamos geoai directamente desde el repo de GitHub
+    # geoai is a good geospatial resource to have.
     - "git+https://github.com/opengeos/geoai.git"

@@ -10,5 +10,5 @@ RUN mamba env create -f environment.yml && mamba clean -afy
 SHELL ["/bin/bash","-lc"]
 RUN mamba init bash && echo "mamba activate eds-geospatial" >> /etc/bash.bashrc
 
-# ¡Usa el usuario no-root 'mambauser' en lugar de 'root'!
+# // Ideally, "mambuser" is the best practice. Probably ys permission issues in conda environment. 
 USER root

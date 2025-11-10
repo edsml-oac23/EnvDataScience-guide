@@ -20,6 +20,6 @@
     "python.defaultInterpreterPath": "/opt/conda/envs/eds-geospatial/bin/python"
   },
 
-  // ¡Usa el usuario no-root 'mambauser' en lugar de 'root'!
+  // it can be mambauser or root. I need to decide on it. (its a draft)
   "remoteUser": "root"
 }
