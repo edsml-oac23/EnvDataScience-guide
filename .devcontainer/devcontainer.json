@@ -1,39 +1,25 @@
 {
   "name": "Imperial EDSML Practicals",
-  // Apunta a nuestro Dockerfile
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": "."
-  },
+  "build": { "dockerfile": "Dockerfile", "context": "." },
 
-  // Extensiones que se instalarán automáticamente
   "customizations": {
     "vscode": {
       "extensions": [
-        // Extensiones estándar de Python
         "ms-python.python",
         "ms-toolsai.jupyter",
-
-        // ¡Tu extensión personalizada!
-        "./.extensions/eds-guide-0.0.1.vsix"
+        "EnvDataScience.eds-guide"
       ]
     }
   },
 
-  // --- Configuración para que el contenedor funcione bien ---
-  // Usar el shell de bash donde activamos el entorno
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.profiles.linux": {
-      "bash": {
-        "path": "/bin/bash",
-        "args": ["-l"]
-      }
+      "bash": { "path": "/bin/bash", "args": ["-l"] }
     },
-    // Apuntar al intérprete de Python que Mamba instaló
     "python.defaultInterpreterPath": "/opt/conda/envs/eds-geospatial/bin/python"
   },
-  
-  // Usar el usuario no-root 'mambauser' (debe coincidir con el Dockerfile)
+
+  // ¡Usa el usuario no-root 'mambauser' en lugar de 'root'!
   "remoteUser": "root"
 }
