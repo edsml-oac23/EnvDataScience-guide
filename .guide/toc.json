@@ -11,7 +11,7 @@
           "checkdeps": true
         },
         {
-          "title": "1.2 Climate data via STAC",
+          "title": "1.2 Climate data..",
           "description": "Accessing climate data through STAC APIs and loading cubes with Xarray.",
           "file": ".guide/week1/1.2-climate-stac.md",
           "notebook": "notebooks/week1/1.2-climate-stac.ipynb",
