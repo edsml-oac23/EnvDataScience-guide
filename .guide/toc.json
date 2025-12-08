@@ -1,75 +1,56 @@
 {
-  "title": "Imperial EDSM Practicals",
   "categories": [
     {
-      "title": "Week 1: Climate & Time Series",
-      "description": "Climate data, STAC access, Xarray time series, Smart Vineyard project.",
+      "title": "Week 1 – iiiiClimate & Time Series",
       "steps": [
         {
           "title": "1.1 Preparing your environment",
-          "description": "Install uv and the core geospatial stack.",
+          "description": "Setting up your development environment and installing the required dependencies.",
           "file": ".guide/week1/1.1-setup.md",
-          "notebook": "notebooks/week1/1-1-setup-uv.ipynb"
+          "notebook": "notebooks/week1/1.1-setup-uv.ipynb",
+          "checkdeps": true
         },
         {
           "title": "1.2 Climate data via STAC",
-          "description": "Query STAC APIs and open climate cubes with Xarray.",
+          "description": "Accessing climate data through STAC APIs and loading cubes with Xarray.",
           "file": ".guide/week1/1.2-climate-stac.md",
-          "notebook": "notebooks/week1/1-2-climate-stac.ipynb"
+          "notebook": "notebooks/week1/1.2-climate-stac.ipynb",
+          "climate download": true
         },
         {
           "title": "1.3 Time series with Xarray",
-          "description": "Resampling, anomalies, and temporal aggregation.",
+          "description": "Working with climate time series: resampling, anomalies, temporal aggregation.",
           "file": ".guide/week1/1.3-time-series-xarray.md",
-          "notebook": "notebooks/week1/1-3-time-series-xarray.ipynb"
+          "notebook": "notebooks/week1/1.3-time-series-xarray.ipynb"
         },
         {
           "title": "1.4 Smart Vineyard project",
-          "description": "GeoAI project combining SAM with climate data.",
+          "description": "Mini-project: Combining climate data with vineyard boundaries.",
           "file": ".guide/week1/1.4-smart-vineyard.md",
-          "notebook": "notebooks/week1/1-4-smart-vineyard.ipynb"
+          "notebook": "notebooks/week1/1.4-smart-vineyard.ipynb"
         }
       ]
     },
     {
-      "title": "Week 3: Remote Sensing & GeoAI",
-      "description": "Foundation models, land-cover classification, change detection.",
+      "title": "Week 3 – Remote Sensing & GeoAI",
       "steps": [
         {
           "title": "3.1 Foundation models in EO",
-          "description": "Concepts of SAM, CLIP, and vision transformers.",
+          "description": "Introduction to foundation models for Earth Observation.",
           "file": ".guide/week3/3.1-foundation-eo.md",
-          "notebook": "notebooks/week3/3-1-foundation-eo.ipynb"
+          "notebook": "notebooks/week3/3.1-foundation-eo.ipynb"
         },
         {
-          "title": "3.3 GeoAI classification",
-          "description": "From Random Forest to SAM-based segmentation.",
+          "title": "3.2 GeoAI classification",
+          "description": "Land cover classification using deep learning.",
           "file": ".guide/week3/3.2-geoai-classification.md",
-          "notebook": "notebooks/week3/3-3-geoai-classification.ipynb"
+          "notebook": "notebooks/week3/3.2-geoai-classification.ipynb"
         },
         {
-          "title": "3.4 Nagasaki change project",
-          "description": "Automated change detection pipeline.",
-          "file": ".guide/week3/3.4-nagasaki-change.md",
-          "notebook": "notebooks/week3/3-4-nagasaki-change.ipynb"
-        }
-      ]
-    },
-    {
-      "title": "Module 1: Spatial Analysis",
-      "description": "Introduction to vector and raster data.",
-      "steps": [
-        {
-          "title": "1. Intro to Spatial Analysis",
-          "description": "Learn the basics of Geopandas and Rasterio.",
-          "file": ".guide/01-intro-spatial.md",
-          "notebook": "notebooks/intro_to_spatialanalysis.ipynb"
-        },
-        {
-          "title": "2. GEE & OSM Tutorial",
-          "description": "Using Google Earth Engine.",
-          "file": ".guide/02-gee-osm.md",
-          "notebook": "notebooks/tutorial_GEE_OSM.ipynb"
+          "title": "3.3 Nagasaki change project",
+          "description": "Detecting urban changes using deep learning.",
+          "file": ".guide/week3/3.3-nagasaki-change.md",
+          "notebook": "notebooks/week3/3.3-nagasaki-change.ipynb"
         }
       ]
     }
