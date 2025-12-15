@@ -2,32 +2,12 @@ name: eds-geospatial
 channels:
   - conda-forge
 dependencies:
-  # --- Core Python & Jupyter ---
-  - python=3.10
-  - pip
+  - python=3.11
   - jupyterlab
-
-  # --- Core Geospatial Stack ---
-  
-  - gdal
-  - geopandas
-  - rasterio
-  - pyproj
-  - shapely
-  - fiona
-
-  # --- Modern OpenGeos Stack ---
-  - leafmap
-  - earthengine-api
-  - samgeo               
-  - segment-anything-hq   
-  
-  # --- ML & Data Science ---
-  - scikit-learn
-  - pandas
-  - matplotlib
-  
-  # --- Pip-only packages ---
+  - uv # For fast pip/git installs
+  - just
+  - geospatial # Core opengeos stack
+  - segment-geospatial # SAM/GeoAI segmentation (samgeo)
+  - leafmap # Interactive maps
   - pip:
-    # geoai is a good geospatial resource to have.
-    - "git+https://github.com/opengeos/geoai.git"
+    - git+https://github.com/opengeos/geoai.git # Optional: latest GeoAI tools

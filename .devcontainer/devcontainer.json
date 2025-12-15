@@ -1,7 +1,7 @@
 {
   "name": "Imperial EDSML Practicals",
   "build": { "dockerfile": "Dockerfile", "context": "." },
-
+  "remoteUser": "vscode",  // ← Critical: runs as non-root
   "customizations": {
     "vscode": {
       "extensions": [
@@ -11,15 +11,11 @@
       ]
     }
   },
-
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.profiles.linux": {
       "bash": { "path": "/bin/bash", "args": ["-l"] }
     },
     "python.defaultInterpreterPath": "/opt/conda/envs/eds-geospatial/bin/python"
-  },
-
-  // it can be mambauser or root. I need to decide on it. (its a draft)
-  "remoteUser": "root"
+  }
 }

@@ -3,12 +3,22 @@ FROM condaforge/mambaforge:latest
 WORKDIR /workspaces/EnvDataScience-guide
 COPY environment.yml .
 
-# Build the geospatial environment
+# Install the environment
 RUN mamba env create -f environment.yml && mamba clean -afy
 
-# Auto-activate the environment for every shell
-SHELL ["/bin/bash","-lc"]
-RUN mamba init bash && echo "mamba activate eds-geospatial" >> /etc/bash.bashrc
+# Create non-root user (standard VS Code devcontainer practice)
+ARG USERNAME=vscode
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
 
-# // Ideally, "mambuser" is the best practice. Probably ys permission issues in conda environment. 
-USER root
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    && apt-get update \
+    && apt-get install -y sudo \
+    && echo "$USERNAME ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+
+# Auto-activate conda env for the non-root user
+USER $USERNAME
+RUN mamba init bash \
+    && echo "mamba activate eds-geospatial" >> ~/.bashrc

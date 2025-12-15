@@ -1,56 +1,68 @@
 {
   "categories": [
     {
-      "title": "Week 1 Climate & Time Series",
+      "title": "Week 1: Climate & Time Series",
+      "description": "Climate data access, STAC, Xarray time series, and the Smart Vineyard project.",
+      "markdown": ".guide/week1/intro.md",
       "steps": [
         {
           "title": "1.1 Preparing your environment",
           "description": "Setting up your development environment and installing the required dependencies.",
           "file": ".guide/week1/1.1-setup.md",
-          "notebook": "notebooks/week1/1.1-setup-uv.ipynb",
           "checkdeps": true
         },
         {
-          "title": "1.2 Climate data..",
-          "description": "Accessing climate data through STAC APIs and loading cubes with Xarray.",
+          "title": "1.2 Climate data via STAC",
+          "description": "Querying STAC APIs and loading climate cubes with Xarray.",
           "file": ".guide/week1/1.2-climate-stac.md",
-          "notebook": "notebooks/week1/1.2-climate-stac.ipynb",
-          "climate download": true
+          "notebook": "notebooks/week1/1.2-climate-stac.ipynb"
         },
         {
           "title": "1.3 Time series with Xarray",
-          "description": "Working with climate time series: resampling, anomalies, temporal aggregation.",
+          "description": "Resampling, anomalies, and temporal aggregation.",
           "file": ".guide/week1/1.3-time-series-xarray.md",
           "notebook": "notebooks/week1/1.3-time-series-xarray.ipynb"
         },
         {
           "title": "1.4 Smart Vineyard project",
-          "description": "Mini-project: Combining climate data with vineyard boundaries.",
+          "description": "Mini-project combining climate data with vineyard boundaries using GeoAI.",
           "file": ".guide/week1/1.4-smart-vineyard.md",
           "notebook": "notebooks/week1/1.4-smart-vineyard.ipynb"
+        },
+        {
+          "title": "Assignments",
+          "description": "Week 1 assignments and review questions.",
+          "file": ".guide/week1/assignments.md"
         }
       ]
     },
     {
-      "title": "Week 3 – Remote Sensing & GeoAI",
+      "title": "Week 3: Remote Sensing & GeoAI",
+      "description": "Foundation models, land-cover classification, and change detection.",
+      "markdown": ".guide/week3/intro.md",
       "steps": [
         {
           "title": "3.1 Foundation models in EO",
-          "description": "Introduction to foundation models for Earth Observation.",
+          "description": "Introduction to SAM, CLIP, and vision transformers for Earth Observation.",
           "file": ".guide/week3/3.1-foundation-eo.md",
           "notebook": "notebooks/week3/3.1-foundation-eo.ipynb"
         },
         {
           "title": "3.2 GeoAI classification",
-          "description": "Land cover classification using deep learning.",
+          "description": "From Random Forest to SAM-based segmentation.",
           "file": ".guide/week3/3.2-geoai-classification.md",
           "notebook": "notebooks/week3/3.2-geoai-classification.ipynb"
         },
         {
           "title": "3.3 Nagasaki change project",
-          "description": "Detecting urban changes using deep learning.",
+          "description": "Automated change detection pipeline.",
           "file": ".guide/week3/3.3-nagasaki-change.md",
           "notebook": "notebooks/week3/3.3-nagasaki-change.ipynb"
+        },
+        {
+          "title": "Assignments",
+          "description": "Week 3 assignments and review questions.",
+          "file": ".guide/week3/assignments.md"
         }
       ]
     }
