@@ -1,7 +1,7 @@
 {
   "name": "Imperial EDSML Practicals",
   "build": { "dockerfile": "Dockerfile", "context": "." },
-  "remoteUser": "vscode",  // ← Critical: runs as non-root
+  "remoteUser": "vscode",
   "customizations": {
     "vscode": {
       "extensions": [

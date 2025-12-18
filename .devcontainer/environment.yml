@@ -8,6 +8,6 @@ dependencies:
   - just
   - geospatial # Core opengeos stack
   - segment-geospatial # SAM/GeoAI segmentation (samgeo)
-  - leafmap # Interactive maps
+
   - pip:
     - git+https://github.com/opengeos/geoai.git # Optional: latest GeoAI tools
