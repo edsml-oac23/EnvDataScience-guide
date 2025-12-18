@@ -25,14 +25,8 @@
       {
         "label": "Exploratory Data Analysis",
         "description": "Introduction to basic geospatial data exploration and visualization.",
-        "markdown": ".guide/introduction/exploratory-data-analysis.md",
-        "actions": [
-          {
-            "label": "Open Notebook",
-            "command": "vscode.open",
-            "args": ["notebooks/introduction/eda.ipynb"]
-          }
-        ]
+        "notebook": "notebooks/introduction/eda.ipynb",
+        "actions": []
       },
       {
         "label": "Assignments",
