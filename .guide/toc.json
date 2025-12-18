@@ -1,14 +1,20 @@
 [
   {
-    "label": "Week 1: Climate & Time Series",
-    "description": "Climate data access, STAC catalogs, Xarray time series, and the Smart Vineyard project.",
-    "markdown": ".guide/week1/intro.md",
+    "label": "Introduction",
+    "description": "Course overview and setup of your development environment.",
+    "markdown": ".guide/intro.md",
     "actions": [],
     "lessons": [
       {
-        "label": "1.1 Preparing your environment",
+        "label": "Course Overview",
+        "description": "Introduction to the Environmental Data Science & Machine Learning module, tools, and structure.",
+        "markdown": ".guide/introduction/overview.md",
+        "actions": []
+      },
+      {
+        "label": "Preparing your environment",
         "description": "Setting up the opengeos-inspired geospatial stack using the Dev Container.",
-        "markdown": ".guide/week1/1.1-setup.md",
+        "markdown": ".guide/introduction/1.1-setup.md",
         "actions": [
           {
             "label": "Check Dependencies",
@@ -17,44 +23,70 @@
         ]
       },
       {
-        "label": "1.2 Climate data via STAC",
-        "description": "Querying STAC APIs and loading climate cubes with Xarray.",
-        "markdown": ".guide/week1/1.2-climate-stac.md",
+        "label": "Exploratory Data Analysis",
+        "description": "Introduction to basic geospatial data exploration and visualization.",
+        "markdown": ".guide/introduction/exploratory-data-analysis.md",
         "actions": [
           {
             "label": "Open Notebook",
             "command": "vscode.open",
-            "args": ["notebooks/week1/1.2-climate-stac.ipynb"]
-          }
-        ]
-      },
-      {
-        "label": "1.3 Time series with Xarray",
-        "description": "Resampling, anomalies, and temporal aggregation.",
-        "markdown": ".guide/week1/1.3-time-series-xarray.md",
-        "actions": [
-          {
-            "label": "Open Notebook",
-            "command": "vscode.open",
-            "args": ["notebooks/week1/1.3-time-series-xarray.ipynb"]
-          }
-        ]
-      },
-      {
-        "label": "1.4 Smart Vineyard project",
-        "description": "Mini-project combining climate data with vineyard boundaries using GeoAI.",
-        "markdown": ".guide/week1/1.4-smart-vineyard.md",
-        "actions": [
-          {
-            "label": "Open Notebook",
-            "command": "vscode.open",
-            "args": ["notebooks/week1/1.4-smart-vineyard.ipynb"]
+            "args": ["notebooks/introduction/eda.ipynb"]
           }
         ]
       },
       {
         "label": "Assignments",
-        "description": "Week 1 review questions and mini-tasks.",
+        "description": "Initial setup assignments and review questions.",
+        "markdown": ".guide/introduction/assignments.md",
+        "actions": []
+      }
+    ]
+  },
+  {
+    "label": "Week 1: Climate & Time Series",
+    "description": "Climate data access, STAC catalogs, Xarray time series, and the Smart Vineyard project.",
+    "markdown": ".guide/week1/intro.md",
+    "actions": [],
+    "lessons": [
+      {
+        "label": "1.1 Climate data via STAC",
+        "description": "Querying STAC APIs and loading climate cubes with Xarray. Concepts, tricks, and novelties in data access.",
+        "markdown": ".guide/week1/1.1-climate-stac.md",
+        "actions": [
+          {
+            "label": "Open Notebook",
+            "command": "vscode.open",
+            "args": ["notebooks/week1/1.1-climate-stac.ipynb"]
+          }
+        ]
+      },
+      {
+        "label": "1.2 Time series with Xarray",
+        "description": "Resampling, anomalies, and temporal aggregation. Tips for efficient multi-dimensional data handling.",
+        "markdown": ".guide/week1/1.2-time-series-xarray.md",
+        "actions": [
+          {
+            "label": "Open Notebook",
+            "command": "vscode.open",
+            "args": ["notebooks/week1/1.2-time-series-xarray.ipynb"]
+          }
+        ]
+      },
+      {
+        "label": "1.3 Smart Vineyard project",
+        "description": "Mini-project combining climate data with vineyard boundaries using GeoAI. Includes study cases and novelties.",
+        "markdown": ".guide/week1/1.3-smart-vineyard.md",
+        "actions": [
+          {
+            "label": "Open Notebook",
+            "command": "vscode.open",
+            "args": ["notebooks/week1/1.3-smart-vineyard.ipynb"]
+          }
+        ]
+      },
+      {
+        "label": "Assignments",
+        "description": "Week 1 review questions, mini-tasks, and study cases.",
         "markdown": ".guide/week1/assignments.md",
         "actions": []
       }
@@ -68,7 +100,7 @@
     "lessons": [
       {
         "label": "3.1 Foundation models in EO",
-        "description": "Introduction to SAM, CLIP, and vision transformers for geospatial tasks.",
+        "description": "Introduction to SAM, CLIP, and vision transformers for geospatial tasks. Concepts, tricks, and novelties.",
         "markdown": ".guide/week3/3.1-foundation-eo.md",
         "actions": [
           {
@@ -80,7 +112,7 @@
       },
       {
         "label": "3.2 GeoAI classification",
-        "description": "From traditional ML to modern segmentation with SAM and custom models.",
+        "description": "From traditional ML to modern segmentation with SAM and custom models. Includes tricks and study cases.",
         "markdown": ".guide/week3/3.2-geoai-classification.md",
         "actions": [
           {
@@ -92,7 +124,7 @@
       },
       {
         "label": "3.3 Nagasaki change project",
-        "description": "Automated change detection pipeline using foundation and custom models.",
+        "description": "Automated change detection pipeline. Concepts, novelties, and GeoAI applications.",
         "markdown": ".guide/week3/3.3-nagasaki-change.md",
         "actions": [
           {
@@ -104,7 +136,7 @@
       },
       {
         "label": "Assignments",
-        "description": "Week 3 review questions and project tasks.",
+        "description": "Week 3 review questions, project tasks, and study cases.",
         "markdown": ".guide/week3/assignments.md",
         "actions": []
       }
