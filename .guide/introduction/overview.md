@@ -1,1 +1,1 @@
-information
+Environmental data are a reflection of **real physical systems**: climate, vegetation, land, water, and human activity. These systems are complex, noisy, and often chaotic. As a result, environmental data are **imperfect**, **incomplete**, and **uncertain**.
