@@ -4,12 +4,25 @@ channels:
 dependencies:
   - python=3.11
   - jupyterlab
-  - uv # For fast pip/git installs
+  - uv
   - just
-  - geospatial # Core opengeos stack
-  - segment-geospatial # SAM/GeoAI segmentation (samgeo)
+  
+  # Core Geospatial Stack 
+  - geospatial          # Installs xarray, geopandas, rasterio, etc.
+  
+  # Climate Data Streaming 
   - intake
   - intake-esm
+  - aiohttp             # Required for fast downloading
+  - zarr                # Required for cloud-native data format
 
+  # Satellite Data Streaming
+  - pystac-client       # Generic search tool
+  - stackstac           # Converts search results to datacubes
+  - planetary-computer  # Microsoft authentication
+
+  # GeoAI & Deep Learning
+  - segment-geospatial  # SAMGeo
+  
   - pip:
-    - git+https://github.com/opengeos/geoai.git # Optional: latest GeoAI tools
+    - git+https://github.com/opengeos/geoai.git
