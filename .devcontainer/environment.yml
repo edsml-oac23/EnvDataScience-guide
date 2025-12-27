@@ -8,6 +8,8 @@ dependencies:
   - just
   - geospatial # Core opengeos stack
   - segment-geospatial # SAM/GeoAI segmentation (samgeo)
+  - intake
+  - intake-esm
 
   - pip:
     - git+https://github.com/opengeos/geoai.git # Optional: latest GeoAI tools
