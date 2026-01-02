@@ -16,6 +16,8 @@
     "terminal.integrated.profiles.linux": {
       "bash": { "path": "/bin/bash", "args": ["-l"] }
     },
-    "python.defaultInterpreterPath": "/opt/conda/envs/eds-geospatial/bin/python"
+    "python.defaultInterpreterPath": "/opt/conda/envs/eds-geospatial/bin/python",
+    "jupyter.jupyterServerType": "local"
+    
   }
 }

@@ -4,8 +4,9 @@ channels:
 dependencies:
   - python=3.11
   - jupyterlab
+  - ipykernel
   - uv
-  - just
+  
   
   # Core Geospatial Stack 
   - geospatial          # Installs xarray, geopandas, rasterio, etc.
