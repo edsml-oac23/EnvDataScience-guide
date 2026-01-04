@@ -1,0 +1,19 @@
+# =========================
+# Large EO datasets (local)
+# =========================
+data/
+
+# Raster / EO formats
+*.tif
+*.tiff
+*.jp2
+*.nc
+*.zarr
+
+# ML / Python
+__pycache__/
+.ipynb_checkpoints/
+
+# VS Code / OS
+.vscode/
+.DS_Store
