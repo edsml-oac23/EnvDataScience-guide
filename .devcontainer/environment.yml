@@ -7,23 +7,24 @@ dependencies:
   - ipykernel
   - uv
   
-  
   # Core Geospatial Stack 
-  - geospatial          # Installs xarray, geopandas, rasterio, etc.
+  - geospatial          # Core bundle (geopandas, rasterio, etc.)
   
-  # Climate Data Streaming 
+  # Interactive Mapping Additions
+  - leafmap
+  - ipyleaflet
+  
+  # Climate & Satellite Streaming (keep as-is)
   - intake
   - intake-esm
-  - aiohttp             # Required for fast downloading
-  - zarr                # Required for cloud-native data format
+  - aiohttp
+  - zarr
+  - pystac-client
+  - stackstac
+  - planetary-computer
 
-  # Satellite Data Streaming
-  - pystac-client       # Generic search tool
-  - stackstac           # Converts search results to datacubes
-  - planetary-computer  # Microsoft authentication
-
-  # GeoAI & Deep Learning
-  - segment-geospatial  # SAMGeo
+  # GeoAI
+  - segment-geospatial
   
   - pip:
     - git+https://github.com/opengeos/geoai.git
