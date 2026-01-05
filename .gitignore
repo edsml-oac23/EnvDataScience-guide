@@ -2,6 +2,8 @@
 # Large EO datasets (local)
 # =========================
 data/
+notebooks/week1/output/
+notebooks/week3/data/
 
 # Raster / EO formats
 *.tif

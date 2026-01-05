@@ -3,16 +3,17 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - jupyterlab
-  - ipykernel
+  #- jupyterlab
+  #- ipykernel
   - uv
+  - openpyxl
   
   # Core Geospatial Stack 
   - geospatial          # Core bundle (geopandas, rasterio, etc.)
   
   # Interactive Mapping Additions
-  - leafmap
-  - ipyleaflet
+  #- leafmap
+  #- ipyleaflet
   
   # Climate & Satellite Streaming (keep as-is)
   - intake
@@ -22,9 +23,13 @@ dependencies:
   - pystac-client
   - stackstac
   - planetary-computer
+  - cartopy
+  - cdsapi
+  - statsmodels
+
 
   # GeoAI
-  - segment-geospatial
+  #- segment-geospatial
   
-  - pip:
-    - git+https://github.com/opengeos/geoai.git
+  #- pip:
+  #  - git+https://github.com/opengeos/geoai.git

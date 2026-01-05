@@ -66,9 +66,9 @@
     "label": "Week 3: Remote Sensing & GeoAI",
     "lessons": [
       {
-        "label": "3.1 Foundation models in EO",
-        "description": "Zero-shot image segmentation using foundation models for Earth Observation",
-        "notebook": "notebooks/week3/SAM_Geo.ipynb",
+        "label": "3.1 Mapping Ecosystems with Unsupervised ML",
+        "description": "Automated land cover classification using PCA and K-Means clustering.",
+        "notebook": "notebooks/week3/Unsupervised_LandCover_Classification.ipynb",
         "actions": []
       },
       {
